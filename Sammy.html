@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's Mindchirps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="pic.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .container-fluid1 {
+            background-color: rgb(6, 88, 83);
+        }
+
+        .footer {
+            background-color: rgb(6, 88, 83);
+        }
+
+        .card-footer button {
+            background-color: rgb(80, 106, 104);
+            padding: 3px;
+        }
+
+        .navbar {
+            background-color: rgb(6, 88, 83);
+        }
+
+        .card-header {
+            color: rgb(175, 239, 239);
+        }
+
+        .col-9 p {
+            text-align: justify;
+            margin: 10px;
+        }
+
+        .pt-5 {
+            padding: 60px;
+            padding-top: 10%;
+        }
+
+        .box {
+            border: 1px solid rgb(214, 188, 188);
+            color: blue;
+            padding: 10px;
+        }
+
+        .card-body p {
+            text-align: justify;
+            margin: 10px;
+        }
+
+        .list li a {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .list button {
+            background-color: gray;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .fa-solid {
+            color: gray;
+        }
+
+        .list ul li a {
+            color: rgb(3, 72, 109);
+        }
+
+        .list ul li a:hover {
+            text-decoration: underline;
+        }
+        .col-xl-6 {
+            margin-top: 7%;
+        }
+
+        .col-xl-3 {
+            margin-top: 10%;
+        }
+        @media (min-width: 767px) {
+            .list {
+                display: none;
+            }
+        }
+        @media (max-width: 320px) {
+            .col-xl-6 {
+                margin-top: 25%;
+            }
+            .navbar-brand{
+                font-size: 1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <!-- First -->
+            <nav class="navbar navbar-expand-md fixed-top">
+                <div class="container-fluid d-flex justify-content-start">
+                    <img src="pic.png" style="width: 7%; height: 7%;">
+                    <a class="navbar-brand ms-0 fst-italic fs-2 fw-bold" href="#" style="color: rgb(153, 231, 231);">Sammy's MindChirps</a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-top text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-dark" id="offcanvasDarkNavbarLabel">Categories
+                            </h5>
+                            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body offcanvas-body-md">
+                            <div class="card-body">
+                                <div class="list">
+                                    <ul style="list-style-type: none;">
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">Reviews</a><button
+                                                class="ms-2 mb-1">16</button>
+                                        </li>
+                                        <ul style="list-style-type: none;">
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Self Help</a><button
+                                                    class="ms-2 mb-1">3</button></li>
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Pyschology</a><button
+                                                    class="ms-2 mb-1">3</button></li>
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Drama</a><button
+                                                    class="ms-2 mb-1">1</button>
+                                            </li>
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Science</a><button
+                                                    class="ms-2 mb-1">0</button></li>
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Non-Fiction</a><button
+                                                    class="ms-2 mb-1">8</button></li>
+                                            <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                                    class="fw-bold text-secondary">Technology</a><button
+                                                    class="ms-2 mb-1">1</button></li>
+                                        </ul>
+                                    </ul>
+                                    <ul style="list-style-type: none;">
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">Movie Reviews</a><button
+                                                class="ms-2 pt-0 mb-1">18</button></li>
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">My Experience</a><button
+                                                class="ms-2 mb-1">1</button></li>
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">Interesting facts</a><button
+                                                class="ms-2 mb-1">1</button></li>
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">TV Series Reviews</a><button
+                                                class="ms-2 mb-1">1</button></li>
+                                        <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                                class="fw-bold text-secondary">Book Excerpts</a><button
+                                                class="ms-2">3</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-xl-6">
+                <div class="card text-light mt-5">
+                    <h2 class="card-header fs-4 p-3 fw-bold" style="background-color: rgb(6, 88, 83);">Review of the
+                        movie Lover
+                        directed by
+                        Prabhuram Vyas</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-sm-3 text-center p-3">
+                                <img src="lover1.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-dark m-4 mt-0">Love is an emotion that has always intrigued me. It is
+                                    loaded with
+                                    lot of contrarian feelings- you need the person you love to be possessive about you
+                                    yet you
+                                    need your space; you need that person to respect your thoughts and let you do things
+                                    on
+                                    your own course yet you want that person to offer their unsolicited views, and I
+                                    could
+                                    go on and on about how this universal feeling called "LOVE" is so unfathomable and
+                                    complex. Perhaps, this is why, no matter how many movies are made around the central
+                                    theme of love, new ones with fresher perspective like "Lover" still are celebrated
+                                    by
+                                    the audience.</p>
+                                <h4 class="fs-6 text-dark m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+
+                <!-- Two -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3 fw-bold" style="background-color: rgb(6, 88, 83);">Review of the
+                        Tamil movie
+                        Por
+                        Thozhil
+                        directed by Vignesh Raja</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-md-3 text-center p-3">
+                                <img src="por.png">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="text-dark m-4 mt-0">Vignesh Raja's debut movie Por Thozhil revolves around the
+                                    story
+                                    where 2 cops are on a mission to hunt down a serial killer. This is a stereotypical
+                                    theme, which Kollywood audience are used to from the days of Sigappu Rojakkal but
+                                    the
+                                    director has navigated through the plot with rich twists and tight screenplay,
+                                    maintaining the suspense all through the movie.</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Three -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3 fw-bold" style="background-color: rgb(6, 88, 83);">Review of movie
+                        Archana
+                        31
+                        Not Out by
+                        Akhil Anil Kumar</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-md-3 text-center p-3">
+                                <img src="Archana.png">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="text-dark m-4 mt-0">'Woman+ Unmarried+ Approaching one's 30s' is a perfect
+                                    combination
+                                    that would invite unabated sympathies and advise from one's friends(married) and
+                                    family.
+                                    Archana 31 Not Out portrays the life of one such woman, Archana(played by Aishwarya
+                                    Lekshmi), who struggles to find the right groom for her. And when she eventually
+                                    thinks
+                                    she has found one, a twist awaits her.</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Four -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3 fw-bold" style="background-color: rgb(6, 88, 83);">Review of the
+                        book
+                        Sailing
+                        through a
+                        storm- Making crisis work for you written by T N Hari and Sanjay Swami</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-md-3 text-center p-3">
+                                <img src="saling.png">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="text-dark m-4 mt-0">None likes facing crisis in life but we all know that it
+                                    is
+                                    inevitable though it's form and severity may vary. Some crisis could impact self
+                                    while
+                                    some like Covid 19 could impact people at large. Darwin's theory of evolution talks
+                                    about survival of the fittest, which emphasizes on the adaptablity to the adverse
+                                    situations as a quintessential quality to live to see another day. This theory is
+                                    very
+                                    much and all the more relevant in present scenario given the VUCA (volatile,
+                                    uncertain,
+                                    complex and ambiguous) nature of the world. But what are the essential qualities,
+                                    you
+                                    may wonder. Thanks to the authors T N Hari and Sanjay Swami, who are eminent
+                                    personalities in the entrepreneurial ecosystem in India, for they have shared their
+                                    collective wisdom in the form of their book 'Sailing through a storm-Making crisis
+                                    work
+                                    for you', which helps us understand these qualities through the inspiring lives of
+                                    men
+                                    and women who had confronted major crisis, with equanimity and fortitude. All are
+                                    real-life stories, including their personal experiences and that of illustrious
+                                    people,
+                                    most of whom are least heard of and had stayed away from the proverbial limelight.
+                                </p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Five -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3" style="background-color: rgb(6, 88, 83);">Gautam Vasudev Menon and
+                        Relationships- An analysis of Vinnaithandi Varuvaya</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-md-3 text-center p-3">
+                                <img src="vinnaithandi.png">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="text-dark m-4 mt-0">Take any relationship- be it between a parent and one's
+                                    kids, that
+                                    with one's friends, or colleagues etc., Any contact between two humans has got lot
+                                    of
+                                    intricacies and nuances. But nothing can beat the complexity more than a
+                                    relationship
+                                    that blossoms between a man and a woman who intends to share their life with each
+                                    other.
+                                    Given its complexity, capturing it in truest sense and realistically is quite a
+                                    challenge for anyone as there is nothing black or white about 'Love', it's always in
+                                    the
+                                    grey!! The challenge lies in bringing out the inner emotions including the
+                                    ambiguities
+                                    and uncertainties in the minds of the characters who are portrayed to be in love.
+                                    When
+                                    it comes to authors, I always felt Somerset Maugham stands out in beautifully
+                                    showcasing
+                                    the vulnerabilities of the lovers. He goes to such depths so as to capture even the
+                                    minutest of emotions in detail. For instance, his stories would narrate how
+                                    stealthily
+                                    they yearn to meet each other and verbalises the hard emotions that even the person
+                                    undergoing them can't express in words.</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Six -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3" style="background-color: rgb(6, 88, 83);">Review of the Tamil movie
+                        Nitham Oru
+                        Vanam by Ra Karthik</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-md-3 text-center p-3">
+                                <img src="nitham.png">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="text-dark m-4 mt-0">The movie's storyline is very straight forward: How travel
+                                    can
+                                    change one's outlook about life. Of late, in Kollywood cinema, this pattern can be
+                                    seen
+                                    where there is a depressed person(men, mostly) who would climb on their Royal
+                                    Enfield
+                                    bike and then set off to the Himalayan mountains; when they return, they become a
+                                    refined soul. So, is this movie any different from the stereotypical portrayal?! Ah,
+                                    you
+                                    can't get to the verdict right in the first paragraph</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Seven -->
+
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3" style="background-color: rgb(6, 88, 83);">Book Review of Row, Row,
+                        Row
+                        your Boat
+                        - 50 Simple Little Things to Navigate the Modern Indian Marriage by Sophia Philips and Roopak
+                        Nedumpilly</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-sm-3 text-center p-3">
+                                <img src="row.png">
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-dark m-4 mt-0">It's a common saying which goes like 'Marriages are made
+                                    in
+                                    Heaven'; but we all know that the couple should still lead their lives on (beautiful
+                                    yet
+                                    complicated) Earth!! All of us want and yearn for a happy, peaceful, fun filled and
+                                    satisfying married life and a partner who would support, defend, and handhold us in
+                                    this
+                                    journey. But very rarely do we come across couples who have achieved this stature.
+                                    This
+                                    book 'Row, Row, Row your Boat' is a book written by couple therapists, Sophia and
+                                    Roopak(a couple themselves!!), who turned around their married life which was on the
+                                    verge of collapse with therapy's help. This is a short but insightful read on little
+                                    things that couples could do 'together' to reach their vision of becoming a
+                                    made-for-each-other couple, which apparently was their original vow when they got
+                                    married but may have fizzled out as years passed by.</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+                <!-- Eight -->
+                <div class="card text-light mt-4">
+                    <h2 class="card-header fs-4 p-3" style="background-color: rgb(6, 88, 83);">Book Review of The Moral
+                        Compass:
+                        Finding Balance and Purpose in an Imperfect World by Hardayal Singh</h2>
+                    <div class="card-body d-flex flex-row">
+                        <div class="row">
+                            <div class="col-sm-3 text-center p-3">
+                                <img src="moral.png" class="mx-auto d-block flex-column">
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-dark m-4 mt-0">Let's assume this situation. You are working in a reputed
+                                    organization and your appraisal is underway. You have high hopes of getting a
+                                    sizeable
+                                    increment with a promotion to a leadership role. All of a sudden, your manager
+                                    invites
+                                    you into his room and asks you to poach some information to a competitor firm for
+                                    some
+                                    illegal commission. Would you be okay doing this so that your appraisal sails
+                                    through,
+                                    which will also keep you in your manager's good books or would you back off as you
+                                    would
+                                    be hurting the organization for illegal short term again. This is just an example of
+                                    one
+                                    of plethora of daily dilemmas that life throws at you with varying complexities.
+                                    This
+                                    book by Hardayal Singh, a civil service Officer, attempts to highlight through
+                                    fictional
+                                    and real stories of common men, that choosing and walking along the righteous path
+                                    with
+                                    an unwavering mind is possible but acknowledges that it is extremely difficult.
+                                    Through
+                                    these stories, the readers will get to understand that though the path has no or
+                                    little
+                                    trail, when one looks back one will feel satisfied for having left a trail, serving
+                                    as a
+                                    guiding light for fellow men. More importantly, enjoy a good night's sleep!</p>
+                                <h4 class="text-dark fs-6 m-4">..[Continue Reading...]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn float-end text-light border-2 rounded-1">Movie Reviews</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 gx-5">
+                <div class="card mt-1">
+                    <h2 class="card-header fs-4" style="background-color: rgb(6, 88, 83);">Newsletter</h2>
+                    <div class="card-body">
+                        <input class="form-control" type="email" placeholder="Email Address">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-primary mt-3 p-1">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <h2 class="card-header fs-5" style="background-color: rgb(6, 88, 83);">About Sammy's Mindchirps</h2>
+                    <div class="card-body">
+                        <p>Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an
+                            acronym of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope
+                            offering amazing learning opportunities as we grow and explore various facets of life. So
+                            this blog is a platform where I share anything that I find interesting (with my two cents,
+                            of course :D). I assure that you will have some new learning when you exit the blog. And do
+                            share your feeback on the blog or anything you want me to write about in this blog by
+                            dropping an email to mindchirps@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <h2 class="card-header fs-4" style="background-color: rgb(6, 88, 83);">Categories</h2>
+                    <div class="card-body">
+                        <div class="list">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">Reviews</a><button class="ms-2 mb-1">16</button>
+                                </li>
+                                <ul style="list-style-type: none;">
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Self Help</a><button
+                                            class="ms-2 mb-1">3</button></li>
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Pyschology</a><button
+                                            class="ms-2 mb-1">3</button></li>
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Drama</a><button class="ms-2 mb-1">1</button>
+                                    </li>
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Science</a><button
+                                            class="ms-2 mb-1">0</button></li>
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Non-Fiction</a><button
+                                            class="ms-2 mb-1">8</button></li>
+                                    <li><i class="fa-solid fa-check me-2"></i><a href="#"
+                                            class="fw-bold text-secondary">Technology</a><button
+                                            class="ms-2 mb-1">1</button></li>
+                                </ul>
+                            </ul>
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">Movie Reviews</a><button
+                                        class="ms-2 pt-0 mb-1">18</button></li>
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">My Experience</a><button
+                                        class="ms-2 mb-1">1</button></li>
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">Interesting facts</a><button
+                                        class="ms-2 mb-1">1</button></li>
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">TV Series Reviews</a><button
+                                        class="ms-2 mb-1">1</button></li>
+                                <li><i class="fa-solid fa-square-caret-right me-2"></i><a href="#"
+                                        class="fw-bold text-secondary">Book Excerpts</a><button class="ms-2">3</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <h2 class="card-header fs-4" style="background-color: rgb(6, 88, 83);">Tags</h2>
+                    <div class="card-body">
+                        <div class="list d-flex">
+                            <ul>
+                                <li class="fw-bold text-secondary"><a href="#">Technology</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Non-fiction</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Animals</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Web Designing</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Thriller</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Self-Help-Book</a></li>
+                            </ul>
+                            <ul>
+                                <li class="fw-bold text-secondary"><a href="#">Science</a></li>
+                                <li class="fw-bold text-secondary"><a href="#">Drama</a></li>
+                                <ul style="list-style-type: circle;">
+                                    <li class="fw-bold text-secondary"><a href="#">Yoga</a></li>
+                                    <li class="fw-bold text-secondary"><a href="#">Legal</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-md-6 d-flex justify-content-center">
+                    <div class="d-flex flex-row text-center">
+                        <button class="box bg-light px-3 py-2">‹</button>
+                        <button class="box bg-primary text-white px-3 py-2">1</button>
+                        <button class="box bg-light px-3 py-2">2</button>
+                        <button class="box bg-light px-3 py-2">3</button>
+                        <button class="box bg-light px-3 py-2">4</button>
+                        <button class="box bg-light px-3 py-2">5</button>
+                        <button class="box bg-light px-3 py-2">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="text-light pt-5">
+            <div class="">
+                <div class="d-flex flex-wrap justify-content-center fs-5">
+                    <i class="fa-brands fa-twitter m-3"></i>
+                    <i class="fa-brands fa-facebook m-3"></i>
+                    <i class="fa-brands fa-instagram m-3"></i>
+                    <i class="fa-brands fa-google m-3"></i>
+                </div>
+
+                <div class="d-flex flex-column align-items-center text-center mt-4">
+                    <h2 class="fs-5 mb-2">@ All rights reserved by Sammy's MindChirps</h2>
+                    <p class="fs-6 mb-1">Logo credits: Mr. Jashwanth Kumar S</p>
+                    <p class="fs-6">Developed and Hosted by 8Queens</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
